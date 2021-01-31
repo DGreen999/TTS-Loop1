@@ -1,0 +1,41 @@
+package tts.com.company;
+
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.Scanner;
+import static java.lang.System.*;
+import java.util.Map;
+
+
+public class Main< keyset, value> {
+
+
+
+    public static void main(String[] args) {
+
+
+        Map<String, String> Cars = new HashMap<>();
+        // Populate the HashMap
+         Cars.put("GR","Toyota");
+         Cars.put("Outback", "Subaru");
+         Cars.put( "Civic","Honda");
+         Cars.put("Corvette","Chevrolet");
+         Cars.put("Gladiator", "Jeep");
+         Cars.put("Telluride","Kia");
+        out.println("What car model are you looking for?");
+
+        Collection<String> make = Cars.values();
+
+
+        Scanner cinput = new Scanner (in);
+        String model = cinput.nextLine();
+
+        if (Cars.containsKey(model)) {
+            out.print("Oh, you're looking for a " + model + "?"+ " Here is our" + Cars.get(model) +" Section right over here.");
+        } else {
+
+            out.print("Sorry, that is not available");
+        }
+
+
+    }}
