@@ -1,0 +1,37 @@
+package tts.com.company;
+
+import java.util.Scanner;
+
+import static java.lang.Math.*;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+               int i,n=0,s=0,x=n--;
+
+              {
+                  System.out.println("Input the 5 numbers : ");
+
+             }
+              for (i=0;i<5;i++)
+              {
+                 Scanner in = new Scanner(System.in);
+                  n = in.nextInt();
+                datatype[] array = new datatype[i];
+                 s +=n;
+
+              }
+              max(s, n);
+              min(x, n);
+
+              int max = n;
+              int min = x;
+        System.out.println("The sum is : " +s+"\nThe product is : " +(n*i)+"\nThe Max is : " +max+"\nThe Min is : " +min);
+          }
+
+    private static void min(int x, int n) {
+    }
+
+}
+
